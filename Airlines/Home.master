@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 721px;
+        }
+        .style3
+        {
+            width: 318px;
+        }
+    .style4
+    {
+        color: #0000FF;
+        font-family: "Showcard Gothic";
+    }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table class="style1">
+        <tr>
+            <td class="style3">
+                <asp:Menu ID="Menu2" runat="server" BackColor="#000066" 
+                    DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="X-Large" 
+                    ForeColor="Aqua" Height="238px" onmenuitemclick="Menu2_MenuItemClick" 
+                    RenderingMode="Table" StaticSubMenuIndent="10px" Width="128px">
+                    <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#FFFBD6" />
+                    <DynamicSelectedStyle BackColor="#FFCC66" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Book1.aspx" Text="Book a Flight" 
+                            Value="Book a Flight"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Search.aspx" Text="Flight Schedule" 
+                            Value="Flight Schedule"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="Cancellation.aspx" Text="Manage Booking" 
+                            Value="Manage Booking">
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#FFCC66" />
+                </asp:Menu>
+            </td>
+            <td class="style2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+            <td>
+                <table class="style1" frame="void">
+                    <tr>
+                        <td colspan="2" class="style4" bgcolor="#000066" 
+                            style="color:Aqua; font-size: x-large;" align="center" >
+                            Login!</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" bgcolor="#000066" style="font-size: x-large" align="center">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="##000066" style="font-size: x-large" align="center"><font color="Aqua">
+                            Username:</font></td>
+                        <td bgcolor="##000066">
+                            <asp:TextBox ID="TextBox1" runat="server" 
+                                style="text-align: left; margin-left: 2px;"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#000066" style="font-size: x-large" align="center"><font color="Aqua">
+                            Password:</font></td>
+                        <td bgcolor="#000066">
+                            <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" 
+                                style="margin-left: 0px"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" bgcolor="#000066" style="font-size: x-large" align="center">
+                            <asp:Label ID="Label1" runat="server" ForeColor="Red" Text=" "></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" bgcolor="#000066" style="font-size: x-large" align="center">
+                            <asp:Button ID="Button1" runat="server" Text="Login" onclick="Button1_Click" 
+                                BackColor="Aqua" Font-Size="Large" ForeColor="#000066" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" bgcolor="Aqua" style="font-size: x-large" align="center">
+                            <asp:HyperLink ID="HyperLink5" runat="server" Font-Underline="True" 
+                                ForeColor="Aqua" NavigateUrl="~/ForgotPass.aspx">Forgot Password?</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" bgcolor="#000066" style="font-size: x-large; color: #00FFFF;" 
+                            align="center" >
+                            Not a Member Yet?</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" bgcolor="Aqua" style="font-size: x-large" align="center">
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Register.aspx" 
+                                ForeColor="Aqua">Click Here to Register</asp:HyperLink>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+&nbsp;
+                </td>
+        </tr>
+        </table>
+</asp:Content>
+

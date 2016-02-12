@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div align="center">
+        <table class="style1">
+            <tr>
+                <td>
+                    &nbsp;
+                    <asp:Image ID="Image1" runat="server" 
+                        ImageUrl="~/Images/coollogo_com-135901115.png" ImageAlign="Middle" 
+                        Width="1300px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+            BackColor="#000066" 
+            Font-Size="X-Large" ForeColor="Aqua" Height="46px" RenderingMode="Table" 
+            StaticSubMenuIndent="16px" Width="1001px" style="text-align: left">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/About_Us.aspx" Text="About Us" Value="About Us">
+                    <asp:MenuItem NavigateUrl="~/Chairmanmsg.aspx" Text="Chairman's Message" 
+                        Value="New Item"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Vision.aspx" Text="Vision and Values" 
+                        Value="Vision and Values"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Charter.aspx" Text="Citizen's Charter" 
+                        Value="Citizen's Charter"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Plan Your Travel" Value="Plan Your Trave">
+                    <asp:MenuItem NavigateUrl="~/Cancellation.aspx" Text="Manage Booking" 
+                        Value="Manage Booking"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Book1.aspx" Text="Book Online" Value="Book Online">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Search.aspx" Text="Flight Search" 
+                        Value="Flight Search"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Products and Services" Value="Products and Services" 
+                    NavigateUrl="~/Services.aspx">
+                    <asp:MenuItem NavigateUrl="~/Baggage.aspx" Text="Baggage" Value="Baggage">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Tracer.aspx" Text="Baggage Tracer" 
+                        Value="Baggage Tracer"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Assistance.aspx" Text="Special Assistance" 
+                        Value="Special Assistance">
+                        <asp:MenuItem NavigateUrl="~/Disabilities.aspx" 
+                            Text="Guest with Disabilities and/or Reduced Mobility" 
+                            Value="Guest with Disabilities and/or Reduced Mobility"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Infants.aspx" Text="Travel with Infants" 
+                            Value="Travel with Infants"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Needs.aspx" Text="Other Special Needs" 
+                            Value="Other Special Needs">
+                            <asp:MenuItem NavigateUrl="~/Needs.aspx" Text="Wheelchairs at the airport" 
+                                Value="New Item"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Needs.aspx" 
+                                Text="Travelling with your own wheelchair" 
+                                Value="Travelling with your own wheelchair"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Meals.aspx" Text="Special Meals" Value="Needs">
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/FeedBack.aspx" Text="FeedBack" Value="FeedBack">
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <br />
+        <marquee style="height: 101px" behavior="scroll" vspace="0px"><img src="Images/12.jpg" height="80" width="200"><img src="Images/13.jpg" height="80" width="200"><img src="Images/14.jpg" height="80" width="200"><img src="Images/15.jpg" height="80" width="200"><img src="Images/16.jpg" height="80" width="200"></marquee><br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Contact_us.aspx" 
+            Font-Size="X-Large">Contact Us</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink2" runat="server" 
+            NavigateUrl="~/Privacy_Policy.aspx" Font-Size="X-Large">Privacy Policy</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Disclaimer.aspx" 
+            Font-Size="X-Large">Disclaimer and Terms of Use</asp:HyperLink>
+    </div>
+    </form>
+</body>
+</html>

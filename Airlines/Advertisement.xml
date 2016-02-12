@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/Images/1.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText></AlternateText>
+		<Keyword></Keyword>
+		
+	</Ad>
+
+	<Ad>
+		<ImageUrl>~/Images/2.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText></AlternateText>
+		<Keyword></Keyword>
+
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Images/9.jpe</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText></AlternateText>
+		<Keyword></Keyword>
+
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Images/5.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText></AlternateText>
+		<Keyword></Keyword>
+
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Images/6.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText></AlternateText>
+		<Keyword></Keyword>
+
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Images/8.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText></AlternateText>
+		<Keyword></Keyword>
+
+	</Ad>
+		<Ad>
+		<ImageUrl>~/Images/10.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText></AlternateText>
+		<Keyword></Keyword>
+
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Images/110.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText></AlternateText>
+		<Keyword></Keyword>
+
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Images/120.jpg</ImageUrl>
+		<NavigateUrl></NavigateUrl>
+		<AlternateText></AlternateText>
+		<Keyword></Keyword>
+
+	</Ad>
+</Advertisements>
